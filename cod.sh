@@ -79,45 +79,5 @@ do
 	((i++))
 done
 
-#respuesta=$(curl -s "https://pokeapi.co/api/v2/pokemon")
-
-#while [ $i -lt $max ];
-#do
-#	titulo=$(echo $respuesta | jq ".results[$i].name")
-#	descripcion=$(echo $respuesta | jq ".results[$i].url")
-#	titulo=${titulo//'"'}
-#	descripcion=${descripcion//'"'}
-#	if [ $validador -eq 0 ]
-#	then
-#		echo "Noticia" $j >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#		echo "Titulo:" $titulo >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#		echo -e "Descripcion:" $descripcion "\n" >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#	else
-#		for var in $(ls); do
-#			tituloComp=$(grep $titulo $var)
-#			echo $tituloComp
-#			if [ -z "$tituloComp" ];
-#			then
-#				echo "No existe"
-#				val=1
-#			else
-#				echo "Ya existe la noticia"
-#				val=0
-#				break
-#			fi
-#		done
-#		if [ $val -eq 1 ];
-#		then
-#			echo "Noticia" $j >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#			echo "Titulo:" $titulo >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#			echo -e "Descripcion:" $descripcion "\n" >> $contador$archivo"_"$(date '+%d-%m-%Y').txt
-#			break
-#		fi
-#	fi
-#	((i++,j++))
-#done
-
-#cat resumen.txt
-
 
 
